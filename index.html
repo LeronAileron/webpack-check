@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>CPS</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+<link href="style.css" rel="stylesheet"></head>
+
+<body>
+  
+  <div class="page-holder">
+
+    
+    <aside class="side-menu page-holder__flex--left">
+      
+      <div class="flex-between">
+
+        
+        <button type="button" class="logo logo--side page-nav__icon">
+          <img src="./img/logo.svg" alt="На главную">
+        </button>
+        
+        <button type="button" class="icon icon--side-search page-nav__icon">
+          <img src="./img/search.svg" alt="Статус ремонта">
+        </button>
+      </div>
+
+      <nav class="site-nav site-nav--margin-vertical">
+        <ul>
+          <li class="site-nav__link active-page">Ремонт техники</li>
+          <li class="site-nav__link">Услуги и сервисы</li>
+          <li class="site-nav__link">Корпоративным клиентам</li>
+          <li class="site-nav__link">Продавцам техники</li>
+          <li class="site-nav__link">Партнерам</li>
+          <li class="site-nav__link">Производителям</li>
+          <li class="site-nav__link">Наши сервисные центры</li>
+          <li class="site-nav__link">Контакты</li>
+        </ul>
+      </nav>
+
+      
+      <div class="flex-between">
+        <nav class="page-nav--side-menu flex-between">
+          
+          <button type="button" class="icon page-nav__icon icon--side-phone">
+            <img src="./img/phone.svg" alt="Обратная связь">
+          </button>
+          
+          <button type="button" class="icon page-nav__icon icon--side-message">
+            <img src="./img/message.svg" alt="Написать в поддержку">
+          </button>
+          
+          <button type="button" class="icon page-nav__icon icon--side-profile">
+            <img class="profile-head" src="./img/profile-head.svg" alt="Профиль">
+            <img src="./img/profile-body.svg" alt="">
+          </button>
+        </nav>
+      </div>
+
+      <footer class="side-menu__footer">
+        <p class="side-menu__mail">mail@cps.com</p>
+        <p class="side-menu__phone">8 800 890 8900</p>
+        <button type="button" class="side-menu__lang-button side-menu__lang-button--active">RU</button>
+        <button type="button" class="side-menu__lang-button">EN</button>
+        <button type="button" class="side-menu__lang-button">CH</button>
+      </footer>
+    </aside>
+    
+
+    
+    <aside class="feedback feedback-call feedback--positioned">
+      <button type="button" class="icon icon--side-the-burger page-nav__icon icon--side-menu">
+        <span class="visually-hidden">Все разделы</span>
+        <div class="icon__burger">
+          <div class="icon__burger-line icon__burger-line--top"></div>
+          <div class="icon__burger-line icon__burger-line--middle"></div>
+          <div class="icon__burger-line icon__burger-line--bottom"></div>
+        </div>
+      </button>
+      <h3 class="feedback__heading active-page">Заказать звонок</h3>
+      <form action="" class="feedback__form" name="call-back">
+        <input class="input" type="tel" name="Tel" placeholder="Телефон" pattern="[0-9],{11}">
+
+        <p class="feedback__terms">
+          Нажимая “отправить”, вы даете согласие на <span class="feedback__terms--highlighted">обработку
+            персональных данных</span>
+          и соглашаетесь с нашей <span class="feedback__terms--highlighted">политикой конфиденциальности</span>
+        </p>
+        <div class="submit__wrapper">
+          <input class="submit submit--feedback" type="submit" value="ОТПРАВИТЬ">
+          <div class="submit__arrow" aria-hidden="true"></div>
+        </div>
+      </form>
+    </aside>
+
+    
+    <aside class="feedback feedback-message feedback--positioned">
+      <h3 class="feedback__heading active-page">Обратная связь</h3>
+      <form action="" class="feedback__form" name="feedback">
+        <input class="input" type="text" name="Name" placeholder="Имя" required>
+        <input class="input" type="tel" name="Tel" placeholder="Телефон" pattern="[0-9],{11}">
+        <input class="input" type="email" name="Email" placeholder="Электронная почта" required>
+        <textarea class="input input--textarea" name="Message" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+
+        <p class="feedback__terms">
+          Нажимая “отправить”, вы даете согласие на <span class="feedback__terms--highlighted">обработку персональных
+            данных</span>
+          и соглашаетесь с нашей <span class="feedback__terms--highlighted">политикой конфиденциальности</span>
+        </p>
+        <div class="submit__wrapper">
+          <input class="submit submit--feedback" type="submit" value="ОТПРАВИТЬ">
+          <div class="submit__arrow" aria-hidden="true"></div>
+        </div>
+      </form>
+    </aside>
+
+    <div class="white-curtain"></div>
+
+    <div class="page-holder__flex--right">
+      
+      <nav class="page-nav flex-between page-nav--padding">
+        <div class="flex-between">
+          
+          <button type="button" class="icon icon--the-burger page-nav__icon icon--side-menu">
+            <span class="visually-hidden">Все разделы</span>
+            <div class="icon__burger">
+              <div class="icon__burger-line icon__burger-line--top"></div>
+              <div class="icon__burger-line icon__burger-line--middle"></div>
+              <div class="icon__burger-line icon__burger-line--bottom"></div>
+            </div>
+          </button>
+          
+          <div class="page-header__divider divider-1"></div>
+          
+          <button type="button" class="logo page-nav__icon">
+            <img src="./img/logo.svg" alt="На главную">
+          </button>
+        </div>
+        
+        <div class="flex-between">
+          
+          <button type="button" class="icon page-nav__icon icon--phone">
+            <img src="./img/phone.svg" alt="Обратная связь">
+          </button>
+          
+          <button type="button" class="icon page-nav__icon icon--message">
+            <img src="./img/message.svg" alt="Написать в поддержку">
+          </button>
+          
+          <button type="button" class="icon page-nav__icon icon--profile">
+            <img class="icon__profile-head" src="./img/profile-head.svg" alt="Профиль">
+            <img src="./img/profile-body.svg" alt="">
+          </button>
+
+          
+          <div class="page-header__divider divider-2"></div>
+
+          
+          <span class="page-nav__icon-text page-nav__icon-text--left--278">Оставить заявку</span>
+          <button type="button" class="icon page-nav__icon icon--tools icon--positioned">
+            <img src="./img/tools.svg" alt="Услуги и сервисы">
+          </button>
+          
+          <span class="page-nav__icon-text page-nav__icon-text--left--79">Статус ремонта</span>
+          <button type="button" class="icon page-nav__icon icon--status icon--positioned">
+            <img src="./img/status.svg" alt="Статус ремонта">
+          </button>
+          
+          <button type="button" class="icon page-nav__icon icon--search icon--positioned">
+            <img src="./img/search.svg" alt="Статус ремонта">
+          </button>
+        </div>
+      </nav>
+
+      <div class="all-content-wrapper">
+
+        <main class="main">
+          <div class="main__div">
+            
+            <h1 class="main__heading active-page">Услуги и сервисы</h1>
+            <nav class="navigation">
+              <ul class="nav nav--m-top--24">
+                <li class="nav__item" tabindex="0"><a href="#" class="nav__link">Ремонтируемые
+                    бренды</a>
+                </li>
+                <li class="nav__item autofocus"><a href="#" class="nav__link">Ремонтируемые
+                    устройства</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Дополнительные услуги</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Цены на услуги</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Специальные цены</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Адреса сервисных центров</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Отзывы</a></li>
+              </ul>
+            </nav>
+
+            
+            <div class="main__description">
+              <section class="description">
+                <article>
+                  <p class="description__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                  </p>
+                  <p class="description__text item--hide--mobile to-hide--mobile">Мы успешно работаем с 1992 года и
+                    заслужили репутацию надежного партнера<span class="text--m-bottom item--hide--ipad to-hide--ipad">,
+                      что
+                      подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                      рекомендациям и, в свою очередь, советуют нас родным и близким.</span></p>
+                  <p class="description__text item--hide--mac to-hide--mac">Села я верстать 1.6 и поняла, что надо
+                    было
+                    чаще смотреть на финальный макет. Вижу, что прятала элементы в 1.3 и 1.6 вообще по-разному. Фронт
+                    работ -
+                    огромный. Одно так сверстано, другое эдак – ужас. Вот эта часть сейчас в загадочном main__div.
+                    У него есть паддинги. а всё остальое - внутри секшенов. У них я убрада паддинги за ненадобностью и
+                    добавила
+                    их свайперу. Спрашивается для чего тут вообще существует общий меин? Корче извините, но всё через
+                    жопу. Переделывать.
+                    Я когда-нибудь доберусь до модалок? ... Вспомнила золотое правило: работает - не лезь. Двигаюсь
+                    дальше.</p>
+                  <button class="text-button read-more more-button">Читать далее</button>
+                  <button class="text-button read-less hidden more-button more-button--rotate">Скрыть</button>
+                </article>
+              </section>
+              
+              <aside class="main__aside">
+                <img class="main__logo" src="./img/_MG_3223.png" alt="Логотип компании CPS">
+              </aside>
+
+            </div>
+
+          </div>
+
+
+          
+          <section>
+            <h2 class="section-header">Ремонт техники различных брендов</h2>
+            <div class="swiper myswiper">
+              <div class="swiper-wrapper cards brands cards--short-list flex-between">
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/lenovo.png" alt="lenovo" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/acer.png" alt="acer" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/apple.png" alt="apple" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/bosch.png" alt="bosch" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/hp.png" alt="hp" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/sony.png" alt="sony" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/lenovo.png" alt="lenovo" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/sumsung.png" alt="sumsung" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/bosch.png" alt="bosch" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/apple.png" alt="apple" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card flex-between">
+                  <img src="./img/sony.png" alt="sony" class="brand__logo">
+                  <button type="button" class="icon icon--go">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <button id="brands" class="text-button more more-button more-button--margin-left">Показать
+                все</button>
+            </div>
+
+          </section>
+
+
+          
+          <section>
+            <h2 class="section-header">Ремонт различных видов техники</h2>
+            <div class="swiper myswiper">
+              <div class="swiper-wrapper cards devices cards--short-list flex-between">
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт ноутбуков</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт планшетов</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт ПК</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт мониторов </p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт мышек</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт клавиатур</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт телефонов </p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт наушников</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card cards__card--height--160 flex-between">
+                  <p class="cards__device">Ремонт пылесосов</p>
+                  <button type="button" class="icon icon--go icon--align--bottom">
+                    <span class="visually-hidden">Перейти</span>
+                  </button>
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+
+              <button id="devices" class="text-button more more-button more-button--margin-left">Показать
+                все</button>
+            </div>
+
+          </section>
+
+          
+          <section class="price-section">
+            <h2 class="section-header">Ремонт различных видов техники</h2>
+            <div class="swiper myswiper swiper--limits--unset">
+              <div class="swiper-wrapper cards prices flex-between">
+                <div class="swiper-slide cards__card price price--m-bottom--0 cards__card--height--price flex-between">
+                  <p class="cards__price cards__price--service">Тестирование с выдачей технического заключения</p>
+                  <p class="cards__price cards__price--price">1 000 ₽</p>
+                  <p class="cards__price cards__price--time">30-120 мин</p>
+                  <button type="button" class="icon icon--order icon--align--bottom">
+                    Заказать
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card price price--m-bottom--0 cards__card--height--price flex-between">
+                  <p class="cards__price cards__price--service">Диагностика</p>
+                  <p class="cards__price cards__price--price">Бесплатно</p>
+                  <p class="cards__price cards__price--time">30 мин</p>
+                  <button type="button" class="icon icon--order icon--align--bottom">
+                    Заказать
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card price price--m-bottom--0 cards__card--height--price flex-between">
+                  <p class="cards__price cards__price--service">Замена дисплея</p>
+                  <p class="cards__price cards__price--price">1 000 ₽</p>
+                  <p class="cards__price cards__price--time">30-120 мин</p>
+                  <button type="button" class="icon icon--order icon--align--bottom">
+                    Заказать
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card price price--m-bottom--0 cards__card--height--price flex-between">
+                  <p class="cards__price cards__price--service">Замена полифонического динамика</p>
+                  <p class="cards__price cards__price--price">1 000 ₽</p>
+                  <p class="cards__price cards__price--time">30-120 мин</p>
+                  <button type="button" class="icon icon--order icon--align--bottom">
+                    Заказать
+                  </button>
+                </div>
+
+                <div class="swiper-slide cards__card price price--m-bottom--0 price--last cards__card--height--price flex-between">
+                  <p class="cards__price cards__price--service">Замена программного обеспечения</p>
+                  <p class="cards__price cards__price--price">1 000 ₽</p>
+                  <p class="cards__price cards__price--time">30-120 мин</p>
+                  <button type="button" class="icon icon--order icon--align--bottom">
+                    Заказать
+                  </button>
+                </div>
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+
+
+            </div>
+
+            <div class="price-section__bottom">
+              <p class="price-section__text">Все цены указаны с учетом НДС. Стоимость ремонта указана
+                на&nbspединичную услугу. Для получения коммерческого предложения на постоянное обслуживание оставьте
+                заявку.</p>
+              <div class="price-section__get-commercials">Получить коммерческое предложение</div>
+            </div>
+
+          </section>
+
+        </main>
+
+        <footer class="footer-main">
+          <p class="footer-main__p footer__p--pre">© 2019 CPS
+            Разработано командой Apesong </p>
+          <p class="footer-main__p"><a href="#" class="footer-main__a">Политика конфиденциальности</a></p>
+          <p class="footer-main__p">Информация, размещенная на данной странице, не&nbspявляется публичной офертой</p>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+  
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+<script type="text/javascript" src="./js/bundle.js"></script></body>
+
+</html>
