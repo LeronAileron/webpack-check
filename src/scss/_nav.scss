@@ -1,0 +1,40 @@
+.nav {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: space-between;
+
+    @media (min-width: 1336px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        height: 40px;
+        white-space: nowrap;
+        margin-right: 16px;
+
+        @media (min-width: 1336px) {
+            margin-right: 40px;
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $grey;
+        padding: 6px;
+        border: 2px solid transparent;
+
+        &:focus, :hover {
+            border-radius: 6px;
+            border: 2px solid #B8FFEC;
+            background-color: $white;
+        }
+    }
+
+    &--m-top--24 {
+        margin-top: 24px;
+    }
+}

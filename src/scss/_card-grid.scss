@@ -1,0 +1,25 @@
+
+/* ДЛЯ МОБИЛКИ!! --так вышло :(  */
+@media (max-width: 768px) {
+    .icon--order {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+    }
+
+    .cards__price {
+        width: 100%;
+    }
+
+    .cards__price--service::before {
+        content: 'Ремонтные услуги';
+    }
+
+    .cards__price--price::before {
+        content: 'Цена';
+    }
+
+    .cards__price--time::before {
+        content: 'Срок';
+    }
+}

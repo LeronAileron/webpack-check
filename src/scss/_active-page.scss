@@ -1,0 +1,25 @@
+.active-page {
+
+    &::before {
+
+        width: 4px;
+        height: 40px;
+        display: inline-block;
+        margin-top: -8px;
+        margin-right: 16px;
+        margin-left: -16px;
+        content: '';
+        background: url('../img/highlight.svg');
+        vertical-align: middle;
+
+        @media (min-width: 1336px) {
+            margin-left: -32px;
+            margin-right: 32px; 
+        }
+
+        @media (min-width: 769px) and (max-width: 1335px) {
+            margin-left: -24px;
+            margin-right: 24px;
+        }
+    }
+}

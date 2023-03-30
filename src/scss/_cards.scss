@@ -1,0 +1,97 @@
+.cards {
+    justify-content: flex-start;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (min-width: 769px) {
+        flex-wrap: wrap;
+        overflow-y: hidden;
+    }
+
+    &__card {
+        width: 240px;
+        min-width: 240px;
+        height: 72px;
+        padding: 16px;
+        background-color: $white;
+        border-radius: 6px;
+        border: 1px solid $light-grey;
+        box-sizing: border-box;
+        margin-right: 16px;
+        margin-bottom: 16px;
+
+        @media (min-width: 1336px) {
+            margin-right: 32px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1335px) {
+            width: 224px;
+            min-width: 224px;
+            margin-right: 24px;
+        }
+
+        &:nth-child(4n):not(.price) {
+            @media (min-width: 1336px) {
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(3n):not(.price) {
+            @media (min-width: 769px) and (max-width: 1335px) {
+                margin-right: 0;
+            }
+        }
+
+        &--height--160 {
+            height: 160px;
+        }
+
+        &--height--price {
+            height: 200px;
+
+            @media (min-width: 769px) {
+                height: 64px;
+            }
+        }
+    }
+
+    &__device {
+        align-self: flex-start;
+        font-weight: normal;
+        color: $main-black;
+        letter-spacing: -0.2px;
+    }
+
+    &__price {
+        line-height: 16px;
+        margin-bottom: 16px;
+
+        @media (min-width: 769px) {
+            margin-bottom: 0;
+        }
+
+        &--service {
+            @media (min-width: 769px) {
+                width: 50%;
+            }
+        }
+
+        &--price {
+            @media (min-width: 769px) {
+                width: 10%;
+            }
+        }
+
+        &--time {
+            @media (min-width: 769px) {
+                width: 15%;
+            }
+        }
+    }
+
+    &--short-list {
+        @media (min-width: 769px) {
+            height: 160px;
+        }
+    }
+}

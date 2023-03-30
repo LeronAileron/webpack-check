@@ -1,17 +1,28 @@
-$bgColor: #24292e;
-$text: #fff;
+@import '../css/swiper-bundle.min.css' ;
+@import '~normalize.css' ;
 
-@font-face {
-  font-family: 'Comic';
-  src: url('../fonts/comic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
-
-body {
-  padding: 1rem;
-  margin: 0;
-  font-family: Comic, sans-serif;
-  background-color: $bgColor;
-  color: $text;
-}
+@import 'variables' ;
+@import 'active-page' ;
+@import 'all-content-wrapper' ;
+@import 'card-grid' ;
+@import 'cards' ;
+@import 'description' ;
+@import 'feedback' ;
+@import 'fonts' ;
+@import 'footer-main' ;
+@import 'general' ;
+@import 'icons' ;
+@import 'input' ;
+@import 'item--hide' ;
+@import 'logo' ;
+@import 'main' ;
+@import 'more-button' ;
+@import 'nav' ;
+@import 'page-holder' ;
+@import 'page-nav-of-icons' ;
+@import 'prices' ;
+@import 'section-header' ;
+@import 'side-menu' ;
+@import 'site-nav' ;
+@import 'submit' ;
+@import 'swiper' ;

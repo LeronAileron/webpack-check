@@ -1,0 +1,125 @@
+html {
+    width: 100vw;
+    max-width: 100%;
+  }
+  
+  html, 
+  ::after,  
+  ::before {
+    box-sizing: border-box;
+    overflow-x: hidden;  
+    height: 100%;
+    font-family: 'TT Lakes';
+    font-size: 16px;
+    line-height: 20px;
+    color: $main-black;
+    font-style: normal;
+    font-weight: normal;
+    white-space: inherit;
+  }
+  
+  ::after,  
+  ::before {
+    font-size: inherit;
+    line-height: inherit;
+    box-sizing: inherit;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-size: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* БОКОВОЕ МЕНЮ  НАЧАЛО*/
+  /* .side-menu {
+    width: 320px;
+    height: 100%;
+    position: absolute;
+    left: -320px;
+    z-index: 1;
+    background-color: $white;
+    /* display: none;
+  } */
+  
+  
+  /* .icon--side-menu:hover .side-menu {
+    /* display: block; */
+    /* left: 0; 
+    transform: translateX(300px);
+    transition-duration: 0.2s;
+  }
+  
+  .icon--side-menu:hover .icon__burger-line--top {
+    transform: scale(1.5) translateY(-3px) rotate(45deg);
+    transform-origin: 0 0;
+    transition-duration: 0.2s;
+  }
+  .icon--side-menu:hover .icon__burger-line--middle {
+    transform: scale(0);
+    transform-origin: 0 0;
+    transition-duration: 0.2s;
+  } */
+  
+  
+  /* БОКОВОЕ МЕНЮ  КОНЕЦ*/
+  
+  
+  /* ЧЕРЕЗ АНИМАЦИЮ ЗАДАТЬ ИЗМЕНЕНИЕ ШИРИНЫ:
+  animation-name: cross-bottom; 
+  @keyframes cross-bottom {
+    o% {
+      width: 14px;
+    }
+    100% {
+      width: 300px;
+    }
+  } */
+  
+  
+  
+  .text--m-bottom {
+    margin-bottom: 16px;
+  }
+  
+  .text-button {
+    background: inherit;
+    border: 0;
+    font-size: 16px;
+    font-weight: thin;
+  }

@@ -1,0 +1,163 @@
+%show-in-side-menu {
+    display: flex;
+    position: absolute;
+    z-index: 3;
+}
+
+%white-curtain {
+    background-color: rgba(255, 255, 255, 0.95);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.page-holder {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    @media (min-width: 1336px) {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        /* позишен чтобы иконки на главном контенте держались */
+    }
+
+    &__flex--right {
+        min-width: 1016px;
+    }
+
+    &--side-menu--show {
+
+        .white-curtain {
+            @extend %white-curtain;
+        }
+
+        .icon__burger-line {
+            width: 22px;
+            transform-origin: 0 0;
+
+            &--top {
+                transform: translateX(20%) rotate(45deg);
+            }
+
+            &--middle {
+                opacity: 0;
+            }
+
+            &--bottom {
+                transform: translateX(15%) translateY(50%) rotate(-45deg);
+            }
+        }
+
+        .icon--the-burger {
+            @extend %show-in-side-menu;
+            top: 24px;
+            left: 16px;
+            z-index: 5;
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 24px;
+            }
+        }
+
+        .logo {
+            @extend %show-in-side-menu;
+            top: 18px;
+            left: 72px;
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 80px;
+            }
+        }
+
+        .icon--search {
+            @extend %show-in-side-menu;
+            top: 24px;
+            right: 24px;
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 256px;
+            }
+        }
+
+        .icon--phone {
+            @extend %show-in-side-menu;
+            bottom: 148px;
+            left: 16px;
+
+            @media (min-width: 769px) {
+                bottom: 180px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 24px;
+            }
+        }
+
+        .icon--message {
+            @extend %show-in-side-menu;
+            bottom: 148px;
+            left: 72px;
+
+            @media (min-width: 769px) {
+                bottom: 180px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 80px;
+            }
+        }
+
+        .icon--profile {
+            @extend %show-in-side-menu;
+            bottom: 148px;
+            left: 128px;
+
+            @media (min-width: 769px) {
+                bottom: 180px;
+            }
+
+            @media (min-width: 769px) and (max-width: 1335px) {
+                left: 136px;
+            }
+        }
+    }
+
+    &--feedback--show {
+
+        .white-curtain {
+            @extend %white-curtain;
+        }
+
+        .icon__burger-line {
+            width: 22px;
+            transform-origin: 0 0;
+
+            &--top {
+                transform: translateX(20%) rotate(45deg);
+            }
+
+            &--middle {
+                opacity: 0;
+            }
+
+            &--bottom {
+                transform: translateX(15%) translateY(50%) rotate(-45deg);
+            }
+        }
+
+        @media (min-width: 769px) {
+            .icon--side-the-burger {
+                display: flex;
+                position: absolute;
+                top: 32px;
+                left: -70px;
+                z-index: 6;
+            }
+        }
+    }
+}

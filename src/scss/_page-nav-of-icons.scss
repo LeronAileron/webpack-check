@@ -1,0 +1,51 @@
+.page-nav {
+    height: 87px;
+    width: 100vw;
+    max-width: 1336px;
+    background-color: $white;
+    border-bottom: 1px solid $secondary-color;
+
+    @media (min-width: 1336px) {
+        visibility: hidden;
+        margin-top: -88px;
+        min-width: 1016px;
+    }
+
+    &__icon {
+        margin-right: 16px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__icon-text {
+        display: none;
+
+        @media (min-width: 1336px) {
+            display: block;
+            visibility: visible;
+            position: absolute;
+            top: 50px;
+        }
+
+        &--left--278 {
+            @media (min-width: 1336px) {
+                right: 300px;
+            }
+        }
+
+        &--left--79 {
+            right: 100px;
+        }
+    }
+
+    &--padding {
+        padding: 16px;
+
+        @media (min-width: 769px) and (max-width: 1335px) {
+            padding: 24px;
+        }
+    }
+
+}

@@ -1,0 +1,20 @@
+.description {
+    width: 100%;
+
+    @media (min-width: 769px) {
+        padding-right: 48px;
+        width: 50%;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+        font-weight: thin;
+        margin-bottom: 16px;
+
+        @media (min-width: 769px) {
+            line-height: 20px;
+        }
+    }
+}

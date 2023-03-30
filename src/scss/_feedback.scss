@@ -1,0 +1,58 @@
+.feedback {
+    padding: 104px 16px 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    transform: translateX(-120%);
+    display: none;
+
+    @media (min-width: 769px) {
+        max-width: 440px;
+        border-left: 1px solid $secondary-color;
+        box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+            16px 0px 52px rgba(14, 24, 80, 0.2);
+    }
+
+    @media (min-width: 1336px) {
+        padding: 40px 32px;
+        padding-left: 31px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1335px) {
+        padding: 40px 24px;
+        padding-left: 23px;
+    }
+
+    &__heading {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.6px;
+        font-weight: bold;
+    }
+
+    &__form {
+        padding: 24px 0 16px;
+    }
+
+    &__terms {
+        font-size: 14px;
+        line-height: 16px;
+
+        &--highlighted {
+            color: $highlight-color;
+        }
+    }
+
+    &--positioned {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        transform: translateX(120%);
+    }
+
+    &--show {
+        display: block;
+        transform: none;
+    }
+}

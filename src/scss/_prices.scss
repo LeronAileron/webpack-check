@@ -1,0 +1,176 @@
+// %prices-first-child-before {
+//     color: var(--prices-grey);
+//     line-height: 16px;
+//     display: block;
+//     height: auto;
+//     overflow-y: hidden;
+//     margin-bottom: 4px;
+//     position: relative;
+//     top: -40px;
+// }
+
+.price-section {
+    &__bottom {
+        padding: 0 16px;
+        padding-bottom: 40px;
+
+        @media (min-width: 1120px) {
+            padding: 0 24px;
+            padding-bottom: 47px;
+        }
+
+        @media (min-width: 769px) and (max-width: 1119px) {
+            padding: 0 32px;
+            padding-bottom: 50px;
+        }
+    }
+
+    &__text {
+        max-width: 450px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        margin-bottom: 16px;
+    }
+
+    &__get-commercials {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        /* Изменить на 500. Добавить шрифт */
+        font-weight: bold;
+        position: relative;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: transparent url('../img/highlight-arrow.svg') no-repeat 50% 50%;
+        }
+    }
+}
+
+.prices {
+    @media (min-width: 769px) {
+        width: 100%;
+        background-color: $white;
+        border-radius: 6px;
+        flex-flow: column;
+        overflow-y: visible;
+        overflow-x: hidden;
+        margin-top: 39px;
+    }
+
+    @media (min-width: 1120px) {
+        padding: 3px 23px 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+        padding: 3px 16px 0;
+    }
+
+    .cards__card {
+        @media (min-width: 769px) and (max-width: 1335px) {
+            min-width: 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+.price {
+    flex-flow: column;
+    align-items: start;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    width: 260px;
+    border: none;
+
+    @media (min-width: 769px) {
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-width: 100%;
+        border-bottom: 1px solid $light-grey;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    @media (min-width: 769px) and (max-width: 1119px) {
+        margin: 0 16px;
+    }
+
+    &:first-child {
+
+        @media (min-width: 769px) {
+            padding-bottom: 14px;
+        }
+
+        .icon--order {
+            @media (min-width: 769px) {
+                margin-bottom: 0;
+            }
+        }
+
+        .cards__price--service::before {
+            @media (min-width: 769px) {
+                // @extend %prices-first-child-before;
+                color: var(--prices-grey);
+                line-height: 16px;
+                display: block;
+                height: auto;
+                overflow-y: hidden;
+                margin-bottom: 4px;
+                position: relative;
+                top: -40px;
+                content: 'Ремонтные услуги';
+            }
+        }
+
+        .cards__price--price::before {
+            @media (min-width: 769px) {
+                // @extend %prices-first-child-before;
+                color: var(--prices-grey);
+                line-height: 16px;
+                display: block;
+                height: auto;
+                overflow-y: hidden;
+                margin-bottom: 4px;
+                position: relative;
+                top: -40px;
+                content: 'Цена';
+            }
+        }
+
+        .cards__price--time::before {
+            @media (min-width: 769px) {
+                // @extend %prices-first-child-before;
+                color: var(--prices-grey);
+                line-height: 16px;
+                display: block;
+                height: auto;
+                overflow-y: hidden;
+                margin-bottom: 4px;
+                position: relative;
+                top: -40px;
+                content: 'Срок';
+            }
+        }
+    }
+
+    &--m-bottom--0 {
+        @media (min-width: 769px) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &--last {
+        @media (min-width: 769px) {
+            border-bottom: none;
+        }
+    }
+}

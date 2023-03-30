@@ -1,0 +1,35 @@
+:root {
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+}
+
+.myswiper {
+    padding: 16px;
+
+    @media (min-width: 1336px) {
+        padding: 24px 32px;
+    }
+
+    @media (min-width: 769px) and (max-width: 1335px) {
+        padding: 24px;
+    }
+
+    &:not(.swiper--limits--unset) {
+        @media (min-width: 769px) and (max-width: 1335px) {
+            width: 795px;
+            margin: 0 auto;
+        }
+    }
+}
+
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #DDDDDD;
+    opacity: 1;
+    margin: 0 16px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: $dark-grey;
+}

@@ -1,0 +1,9 @@
+.all-content-wrapper {
+    background-color: #F8F8F8;
+    max-width: 1336px;  
+    margin: 0 auto;
+
+    @media (min-width: 1336px) {
+        min-width: 1016px;
+    }
+  }

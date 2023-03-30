@@ -1,0 +1,16 @@
+.logo {
+    border: none;
+    background-color: $white;
+
+    @media (min-width: 1336px) {
+        display: none;
+    }
+
+    &--side {
+        display: none;
+
+        @media (min-width: 1336px) {
+            display: flex;
+        }
+    }
+}
